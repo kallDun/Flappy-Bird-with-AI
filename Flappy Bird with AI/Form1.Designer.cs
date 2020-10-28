@@ -58,7 +58,7 @@
             // 
             // timerDraw
             // 
-            this.timerDraw.Interval = 25;
+            this.timerDraw.Interval = 10;
             this.timerDraw.Tick += new System.EventHandler(this.timerDraw_Tick);
             // 
             // Form1

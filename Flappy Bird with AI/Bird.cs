@@ -12,6 +12,7 @@ namespace Flappy_Bird_with_AI
 {
     class Bird
     {
+
         private Image newImage = Resource1.bird_image;
         private GraphicsUnit units = GraphicsUnit.Pixel;
 
