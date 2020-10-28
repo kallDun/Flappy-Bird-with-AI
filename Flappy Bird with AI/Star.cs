@@ -9,8 +9,7 @@ namespace Flappy_Bird_with_AI
 {
     class Star
     {
-        private static string url_imageSTAR = @"D:\Users7\Igor\Desktop\VIDEO_\UNIVERSITY PROJECTS\FlappyBird\Resized Images\Star.png";
-        private Image newImage = Image.FromFile(url_imageSTAR);
+        private Image newImage = Resource1.star_image;
         private GraphicsUnit units = GraphicsUnit.Pixel;
 
         public Point coordinates { get; private set; }

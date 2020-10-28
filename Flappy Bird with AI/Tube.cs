@@ -10,10 +10,8 @@ namespace Flappy_Bird_with_AI
 {
     class Tube
     {
-        private static string url_imageTUBE = @"D:\Users7\Igor\Desktop\VIDEO_\UNIVERSITY PROJECTS\FlappyBird\Resized Images\Tube.png";
-        private static string url_imageTUBE_DOWN = @"D:\Users7\Igor\Desktop\VIDEO_\UNIVERSITY PROJECTS\FlappyBird\Resized Images\Tube_Down.png";
-        private Image tubeImage = Image.FromFile(url_imageTUBE);
-        private Image tubeDownImage = Image.FromFile(url_imageTUBE_DOWN);
+        private Image tubeImage = Resource1.tube_image;
+        private Image tubeDownImage = Resource1.tube_Down_image;
         private GraphicsUnit units = GraphicsUnit.Pixel;
 
         private Random random = new Random();

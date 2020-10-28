@@ -10,13 +10,9 @@ namespace Flappy_Bird_with_AI
 {
     class Background
     {
-        private static string url_imageCITY = @"D:\Users7\Igor\Desktop\VIDEO_\UNIVERSITY PROJECTS\FlappyBird\Resized Images\City.png";
-        private static string url_imageSKY = @"D:\Users7\Igor\Desktop\VIDEO_\UNIVERSITY PROJECTS\FlappyBird\Resized Images\Sky.png";
-        
         GraphicsUnit units = GraphicsUnit.Pixel;
-        private Image city1 = Image.FromFile(url_imageCITY);
-        private Image city2 = Image.FromFile(url_imageCITY);
-        private Image sky = Image.FromFile(url_imageSKY);
+        private Image city = Resource1.city_image;
+        private Image sky = Resource1.sky_image;
 
         private int x = 0; 
 
@@ -32,8 +28,8 @@ namespace Flappy_Bird_with_AI
         public void draw(Graphics g)
         {
             g.DrawImage(sky, 0, 0, new Rectangle(0, 0, 1100, 700), units);
-            g.DrawImage(city1, x, 0, new Rectangle(0, 0, 1100, 700), units);
-            g.DrawImage(city2, x + 1100, 0, new Rectangle(0, 0, 1100, 700), units);
+            g.DrawImage(city, x, 0, new Rectangle(0, 0, 1100, 700), units);
+            g.DrawImage(city, x + 1100, 0, new Rectangle(0, 0, 1100, 700), units);
         }
 
     }

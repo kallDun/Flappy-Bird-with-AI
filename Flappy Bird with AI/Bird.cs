@@ -12,8 +12,7 @@ namespace Flappy_Bird_with_AI
 {
     class Bird
     {
-        private static string url_imageBIRD = @"D:\Users7\Igor\Desktop\VIDEO_\UNIVERSITY PROJECTS\FlappyBird\Resized Images\Bird.png";
-        private Image newImage = Image.FromFile(url_imageBIRD);
+        private Image newImage = Resource1.bird_image;
         private GraphicsUnit units = GraphicsUnit.Pixel;
 
         public int x { get; private set; }
