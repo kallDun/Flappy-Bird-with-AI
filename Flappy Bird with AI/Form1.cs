@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Flappy_Bird_with_AI
@@ -55,7 +49,7 @@ namespace Flappy_Bird_with_AI
             {
                 tubeCreateTimer.Stop();
                 drawingText = $"Game over!\nYou scored {gameplay.counter} points.\n" +
-                $"Click the 'R' to start new game!";
+                $"Click 'R' to start new game!";
             }
             else
             if (!gameplay.gameOver)
@@ -83,6 +77,7 @@ namespace Flappy_Bird_with_AI
                 tubeCreateTimer.Start();
             }
         }
+        
     }
 
     

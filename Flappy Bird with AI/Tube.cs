@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Flappy_Bird_with_AI
 {
@@ -44,7 +39,7 @@ namespace Flappy_Bird_with_AI
         private void y_initialize()
         {
             y_tUp = (-50 * thisRandomPos) - (betweenTubes / 2);
-            y_tDown = y_tUp + 530 + (betweenTubes); // change the number 'betweenTubes' to regulate distance between
+            y_tDown = y_tUp + 540 + (betweenTubes); // change the number 'betweenTubes' to regulate distance between
         }
 
         public void draw(Graphics g)

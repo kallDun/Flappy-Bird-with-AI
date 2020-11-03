@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+
 
 namespace Flappy_Bird_with_AI
 {
@@ -23,8 +20,27 @@ namespace Flappy_Bird_with_AI
             bird = new Bird();
         }
 
+
+        /*public Tube theLastTube()
+        {
+            Tube lastTube = tubesList.First();
+            double distance = 5000;
+            foreach (var tube in tubesList)
+            {
+                if (tube.x - bird.x < distance && tube.x - bird.x >= -100)
+                {
+                    lastTube = tube;
+                }
+            }
+            return lastTube;
+        }*/
+
         public void update()
         {
+            //var tubie = theLastTube();
+            //var distanceToUp = Math.Sqrt(Math.Pow(tubie.x - bird.x, 2) + Math.Pow(tubie.y_tDown - tubie.betweenTubes - bird.y, 2));
+            //var distanceToDown = Math.Sqrt(Math.Pow(tubie.x - bird.x, 2) + Math.Pow(tubie.y_tDown - bird.y, 2));
+
             bird.update();
 
             if (!gameOver)
