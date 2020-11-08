@@ -15,31 +15,23 @@ def eval_genomes(genome, config):
     genome.fitness = 0
     net = neat.nn.FeedForwardNetwork.create(genome, config)
     clock = pygame.time.Clock()
+    isGame = True
+
 
     while isGame:
         clock.tick(30)
         net.fitness += 0.1
         output = net.activate(birdLocation, distanceToUpTube, distanceToDownTube)
-        out.self = output
+        if output > 0.5 :
+            Click()
+
 
     return WIN
 
 
-def stopGame():
-    isGame.self = False
+def Click():
+    print("click")
 
-
-def setNumbers(birdLocation, distanceToUpTube, distanceToDownTube):
-    birdLocation.self = birdLocation
-    distanceToUpTube.self = distanceToUpTube
-    distanceToDownTube.self = distanceToDownTube
-
-
-birdLocation = 0
-distanceToUpTube = 0
-distanceToDownTube = 0
-isGame = True
-out = 1
 
 def run():
     config = neat.config.Config(neat.DefaultGenome, neat.DefaultReproduction,
