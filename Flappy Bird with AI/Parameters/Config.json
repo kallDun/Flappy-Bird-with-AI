@@ -1,6 +1,6 @@
 {
   // start_type: 0 - singlePlay, 1 - neatLearning, 2 - neatPlaying
-  "start_type": 1,
+  "start_type": 2,
   "is_tubes_random": true,
   "tubes_list": [ 5, 4, 6, 7, 1, 3, 8, 4 ], // if size is not random
   "tube_hole": 115,  // hole size

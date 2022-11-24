@@ -39,7 +39,11 @@ namespace Flappy_Bird_with_AI.Output
             while (IsDrawing)
             {
                 await Task.Delay(1000 / fps);
-                DrawCall();
+                try
+                {
+                    DrawCall();
+                }
+                catch (Exception) { }
             }
         }
 
